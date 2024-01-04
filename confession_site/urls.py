@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from confessions.views import get_profiles, get_profile, create_confession
-from confessions.views import index
+from confessions.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -24,4 +24,6 @@ urlpatterns = [
     path("profiles/<str:username>/", get_profile, name="get_profile"),
     path("confessions/create/", create_confession, name="create_confession"),
     path("", index, name="index"),
+    path("signup/", signup_view, name="signup"),
+    path("login/", login_view, name="login"),
 ]
