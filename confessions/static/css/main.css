@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 400px;
+    color:#ffffff
+}
+
+body {
+    animation: gradientAnimation 4s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+form input[type="text"],
+form input[type="password"],
+form button {
+font-size: 16px;
+}
+form input[type="text"],
+form input[type="password"] {
+background-color: transparent;
+border: 1px solid #ffffff;
+color: #ffffff;
+padding: 10px 15px;
+border-radius: 5px;
+}
