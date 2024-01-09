@@ -64,4 +64,5 @@ def create_confession(request):
 
 @api_view(["POST"])
 def all_current_confessions(request):
+    if request.method == "POST"
     
