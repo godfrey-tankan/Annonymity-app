@@ -63,4 +63,4 @@ def create_confession(request):
 
 
 @api_view(["POST"])
-def
+def all_current
