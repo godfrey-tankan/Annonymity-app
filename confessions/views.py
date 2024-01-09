@@ -64,5 +64,7 @@ def create_confession(request):
 
 @api_view(["POST"])
 def all_current_confessions(request):
-    if request.method == "POST"
+    if request.method == "POST":
+        the_last_message = ProfileSerializer.loads(request.body)
+        try:
     
