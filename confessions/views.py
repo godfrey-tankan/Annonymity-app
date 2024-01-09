@@ -67,4 +67,5 @@ def all_current_confessions(request):
     if request.method == "POST":
         the_last_message = ProfileSerializer.loads(request.body)
         try:
+            replier = "the last reply is from"
     
